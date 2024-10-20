@@ -28,4 +28,33 @@ CityBot is a chatbot designed to provide users with information about various ev
 - Support for various event types
 - Dynamic response generation
 
+## Quick Start
+
+To get started with CityBot locally, follow these steps:
+
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/yourusername/citybot.git
+   
+2. Navigate to the project directory:
+   cd citybot
+
+3. Install dependencies for the backend:
+   cd backend
+   npm install
+
+4. Start the backend server:
+   npm start
+
+5. Open the frontend project in a separate terminal:
+   npm run dev
+
+6. Open the backend project in a separate terminal:
+   cd backend
+   npm run dev
+
+   Note: Deployment is currently in progress. Instructions will be provided once the project is live.
+   
+
+   
 
