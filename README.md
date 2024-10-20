@@ -1,6 +1,12 @@
 # CityBot
 
-![CityBot Screenshot](D:\new/CB_1.png)
+![Description](images/CB_1.png)
+![Description](images/CB_2.png)
+![Description](images/CB_3.png)
+![Description](images/CB_4.png)
+![Description](images/CB_5.png)
+![Description](images/CB_6.png)
+
 
 ## Table of Contents
 1. 🤖 [Introduction](#introduction)
