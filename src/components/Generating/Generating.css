@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+.generating-container {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Similar to bg-n-8/80 in Tailwind */
+    border-radius: 1.7rem; /* Rounded corners */
+    font-size: 1rem; /* Set the base font size */
+    color: #fff; /* Text color */
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  }
+  
+  .loading-icon {
+    width: 1.25rem; /* Equivalent to w-5 in Tailwind */
+    height: 1.25rem; /* Equivalent to h-5 in Tailwind */
+    margin-right: 1rem; /* Equivalent to mr-4 in Tailwind */
+  }
+  

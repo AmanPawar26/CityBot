@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../assets/hero-background.jpg');
+  background-size: cover;
+  background-position: center -220px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  padding-top: 150px; /* Adjust this to match your navbar height */
+  margin: 0; /* Ensure no extra margins */
+  border: none; /* Ensure no borders */
+  
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Heading */
+.hero-heading {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* Hero Heading Span */
+.hero-heading span {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-heading img {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* Hero Description */
+.hero-description {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.55rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Button */
+.hero-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #ee5a4e;
+}
+
+/* Robot Section */
+.robot-section {
+  margin-top: 4rem;
+}
+
+.robot-container {
+  position: relative;
+  background: linear-gradient(135deg, #202020, #303030);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 100%; /* Ensure it scales with the container */
+  max-width: 1024px; /* Optional, to limit the size of the container */
+  min-width: 490px;
+  aspect-ratio: 1024 / 490; /* Maintain aspect ratio of the image */
+  overflow: hidden; 
+  margin: 0 auto;
+  border: 4px solid transparent; /* Make the initial border transparent */
+  animation: border-color-change 5s infinite linear;
+  border-radius: 1rem; /* Apply border radius */
+}
+
+.robot-header {
+  height: 1.4rem;
+  background-color: #444;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+}
+
+.robot-image-wrapper {
+  overflow: hidden;
+}
+
+.robot-image {
+  width: 100%;
+  transform: scale(1.7) translateY(8%);
+  transition: transform 0.3s ease; /* Smooth transition for scaling and translation */
+  height: auto; /* Ensure the image scales according to its width */
+  clip-path: inset(0 0 40% 0); /* This will cut off 15% from the bottom */
+}
+
+@media (min-width: 768px) {
+  .robot-image {
+    transform: scale(1) translateY(-10%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .robot-image {
+    transform: scale(1) translateY(-23%);
+  }
+}
+
+@keyframes border-color-change {
+  0% {
+    border-color: #e7b165;
+  }
+  25% {
+    border-color: #bced68;
+  }
+  50% {
+    border-color: #8218c8;
+  }
+  75% {
+    border-color: #b71fc2;
+  }
+  100% {
+    border-color: #3bccdf;
+  }
+}
+
+/* Generating Component */
+.generating-container-position {
+  position: absolute;
+  left: 1rem; /* Equivalent to left-4 */
+  right: 1rem; /* Equivalent to right-4 */
+  bottom: 1.25rem; /* Equivalent to bottom-5 */
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .generating-container-position {
+    left: 50%; /* Equivalent to md:left-1/2 */
+    right: auto; /* Equivalent to md:right-auto */
+    bottom: 2rem; /* Equivalent to md:bottom-8 */
+    width: 31rem; /* Equivalent to md:w-[31rem] */
+    transform: translateX(-50%); /* Equivalent to md:-translate-x-1/2 */
+  }
+}
+.hero::before {
+  content: '';
+  display: block;
+  height: 1140px; /* Increase this value to make the background image taller */
+  width: 100%;
+  background: inherit; /* Apply the same background as the hero section */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's behind other content */
+}

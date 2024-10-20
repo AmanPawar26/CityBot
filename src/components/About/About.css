@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+.roadmap-section {
+  padding: 2rem;
+  background-color: rgb(18, 14, 26); /* Dark background */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adjust if needed */
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Roadmap Grid */
+.roadmap-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.roadmap-item {
+  position: relative;
+  box-shadow: 0 4px 8px rgba(201, 27, 195, 0.1);
+  background-color: #0e0c15e6;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.roadmap-content {
+  position: relative;
+  z-index: 2;
+}
+
+.roadmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.roadmap-date {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #000; /* Set text color to black */
+  text-transform: uppercase; /* Make the text uppercase */
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.875rem;
+}
+
+.status-icon {
+  margin-right: 0.5rem;
+}
+
+.roadmap-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.roadmap-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roadmap-title {
+  font-family: 'Space Grotesk', sans-serif; /* Font family for Space Grotesk */
+  font-weight: 400; /* Font weight for Space Grotesk 400 */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid Overlay */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .roadmap-title {
+    font-size: 1.75rem; /* Adjust title font size for smaller screens */
+  }
+
+  .roadmap-text {
+    font-size: 0.875rem; /* Adjust text font size */
+  }
+
+  .roadmap-image-wrapper {
+    height: 150px; /* Adjust image height */
+  }
+
+  .roadmap-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .roadmap-title {
+    font-size: 2rem;
+  }
+
+  .roadmap-text {
+    font-size: 1rem;
+  }
+
+  .roadmap-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+}
+
+@media (min-width: 1025px) {
+  .roadmap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default for large screens */
+  }
+}

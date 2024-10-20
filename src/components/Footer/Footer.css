@@ -1,0 +1,57 @@
+.footer {
+    padding: 2rem 0; /* Equivalent to py-10 */
+    background-color: rgb(18, 14, 26); /* Ensure background is set correctly */
+    color: #333; /* Dark text color */
+    
+    
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; /* Similar to sm:justify-between */
+    align-items: center;
+    gap: 2.5rem; /* Equivalent to gap-10 */
+    flex-direction: row;
+  }
+  
+  .footer-caption {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif; /* Font family for Space Grotesk */
+    font-weight: 400; /* Font weight for Space Grotesk 400 */
+    font-size: 0.975rem;
+    margin-left: 5rem;
+    
+    
+  }
+  
+  .socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.25rem; /* Equivalent to gap-5 */
+    margin-right: 5rem;
+  }
+  
+  .social-item {
+    margin: 0;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; /* Equivalent to w-10 */
+    height: 2.5rem; /* Equivalent to h-10 */
+    background-color: #444; /* Equivalent to bg-n-7 */
+    border-radius: 50%; /* Equivalent to rounded-full */
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #666; /* Equivalent to hover:bg-n-6 */
+  }
+  

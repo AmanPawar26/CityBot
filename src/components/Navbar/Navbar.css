@@ -1,0 +1,155 @@
+/* Header.css or a separate font import file */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&family=Sora:wght@700&display=swap');
+
+
+/* Navbar.css */
+
+
+
+
+body {
+  background-color: #0e0c15e6; /* Dark color with transparency */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: #fff; /* Default text color to ensure readability on dark background */
+  
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0e0c15e6; /* Opaque black background with 90% opacity */
+  color: #fff; /* Text color to contrast with the black background */
+ 
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0; /* Ensure it sticks to the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Higher z-index to ensure it's on top */
+}
+
+  
+  
+  nav .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo-container img {
+    width: 60px; /* Adjust to the desired size of the circular logo */
+    height: 60px; /* Adjust to match the width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 1rem; /* Space between the logo and text */
+  }
+  
+  nav .logo-container .logo-text {
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: 700; /* Font weight for Sora 700 */
+    color: #fff; /* Text color to contrast with the black background */
+    line-height: 60px; /* Match the height of the logo for vertical alignment */
+    font-family: 'Sora', sans-serif; /* Font family for Sora */
+  }
+  
+  nav .nav-links-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    align-items: center; /* Vertically center items */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between; /* Space links evenly */
+    gap: 4rem; /* Spacing between navigation items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin: 0;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Default color for links */
+    transition: color 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif; /* Font family for Space Grotesk */
+    font-weight: 400; /* Font weight for Space Grotesk 400 */
+    font-size: 1rem; /* Increase font size for visual balance */
+    padding: 0.75rem 1.75rem; /* Increase padding for better balance */
+    display: block; /* Ensure the anchor tags take up full width and height */
+    text-align: center; /* Center align the text */
+  }
+  
+  nav ul li a:hover {
+    color: #af13c1; /* Change color on hover */
+  }
+  
+  nav .nav-buttons {
+    display: flex;
+    gap: 1.5rem; /* Space between buttons */
+    margin-right: auto; /* Push the buttons to the left */
+  }
+  
+  .nav-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-signin {
+    background-color: #333;
+    color: #fff;
+   
+   
+  }
+  
+  .btn-signin:hover {
+    background-color: #555;
+  }
+  
+  .btn-guest {
+    background-color: #ff6347;
+    color: #fff;
+  }
+  
+  .btn-guest:hover {
+    background-color: #aa0e90;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1090px) {
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on the height of the nav */
+      right: 0;
+      width: 100%;
+      
+      
+      /* Add a background image from assets */
+      background-image: url('../../assets/stars.svg'); /* Ensure the correct relative path */
+      background-size: cover; /* Ensure the image covers the entire area */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      background-position: center; /* Center the background image */
+      background-color: rgb(18, 14, 26);
+     
+    
+    /* Create space for the background with a pseudo-element */
+   
+    }
+  
+    nav .nav-buttons {
+      flex-direction: column;
+      padding: 14px 22px;
+    }
+  }
+  
