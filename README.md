@@ -1,8 +1,26 @@
-# React + Vite
+# CityBot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![CityBot Screenshot](D:\new/CB_1.png)
 
-Currently, two official plugins are available:
+## Table of Contents
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Introduction
+CityBot is a chatbot designed to provide users with information about various events, such as concerts, exhibitions, and theatre plays. Its goal is to make it easier for users to discover local activities and services.
+
+## Tech Stack
+- Frontend: React
+- Backend: Node.js, Express.js
+- Database: MySQL
+- API Testing: Postman
+
+## Features
+- Interactive event searching
+- User-friendly interface
+- Support for various event types
+- Dynamic response generation
+
+
