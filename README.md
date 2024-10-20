@@ -1,7 +1,6 @@
 # CityBot
 
 ![Description](images/CB_1.png)
-![Description](images/CB_2.png)
 ![Description](images/CB_3.png)
 ![Description](images/CB_4.png)
 ![Description](images/CB_5.png)
