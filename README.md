@@ -37,22 +37,28 @@ To get started with CityBot locally, follow these steps:
    git clone https://github.com/yourusername/citybot.git
    
 2. Navigate to the project directory:
+  ```bash
    cd citybot
 
-3. Install dependencies for the backend:
+4. Install dependencies for the backend:
+  ```bash
    cd backend
    npm install
 
-4. Start the backend server:
+5. Start the backend server:
+   ```bash
    npm start
 
-5. Open the frontend project in a separate terminal:
+6. Open the frontend project in a separate terminal:
+   ```bash
    npm run dev
 
-6. Open the backend project in a separate terminal:
+7. Open the backend project in a separate terminal:
+    ```bash
    cd backend
    npm run dev
 
+   ```bash
    Note: Deployment is currently in progress. Instructions will be provided once the project is live.
    
 
