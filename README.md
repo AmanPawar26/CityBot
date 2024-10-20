@@ -60,8 +60,9 @@ To get started with CityBot locally, follow these steps:
    cd backend
    npm run dev
 
-   ```bash
-   "Note": Deployment is currently in progress. Instructions will be provided once the project is live.
+
+## Note
+Deployment is currently in progress. Instructions will be provided once the project is live.
    
 
    
