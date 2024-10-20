@@ -35,11 +35,13 @@ To get started with CityBot locally, follow these steps:
 1. Clone the repository: 
    ```bash
    git clone https://github.com/yourusername/citybot.git
-   
+
+   ```bash
 2. Navigate to the project directory:
   ```bash
    cd citybot
 
+   ```bash
 3. Install dependencies for the backend:
   ```bash
    cd backend
