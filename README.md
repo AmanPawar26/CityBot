@@ -40,26 +40,26 @@ To get started with CityBot locally, follow these steps:
   ```bash
    cd citybot
 
-4. Install dependencies for the backend:
+3. Install dependencies for the backend:
   ```bash
    cd backend
    npm install
 
-5. Start the backend server:
+4. Start the backend server:
    ```bash
    npm start
 
-6. Open the frontend project in a separate terminal:
+5. Open the frontend project in a separate terminal:
    ```bash
    npm run dev
 
-7. Open the backend project in a separate terminal:
+6. Open the backend project in a separate terminal:
     ```bash
    cd backend
    npm run dev
 
    ```bash
-   Note: Deployment is currently in progress. Instructions will be provided once the project is live.
+   "Note": Deployment is currently in progress. Instructions will be provided once the project is live.
    
 
    
