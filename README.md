@@ -12,6 +12,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
+5. 📌 [NOTE](#note).
 
 ## Introduction
 CityBot is a chatbot designed to provide users with information about various events, such as concerts, exhibitions, and theatre plays. Its goal is to make it easier for users to discover local activities and services.
@@ -61,8 +62,9 @@ To get started with CityBot locally, follow these steps:
    npm run dev
 
 
-## Note
-Deployment is currently in progress. Instructions will be provided once the project is live.
+## 📌 Note
+**Deployment is currently in progress. Instructions will be provided once the project is live.**
+
    
 
    
